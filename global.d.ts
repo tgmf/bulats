@@ -12,7 +12,6 @@ declare module '@nuxt/schema' {
     }
     phone: string
     email: string
-    competences: string
   }
 }
 
