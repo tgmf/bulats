@@ -1,7 +1,10 @@
 export default defineAppConfig({
-  name: 'Nuxt 3 Awesome Starter',
+  name: 'Bulat Sharipov',
   author: {
-    name: 'viandwi24',
-    link: 'https://github.com/viandwi24',
+    name: 'tgmf',
+    link: 'https://github.com/tgmf',
   },
+  phone: '+33 745 59 90 21',
+  email: 'bulat.nmd@gmail.com',
+  competences: 'Filmmaker, creative video producer',
 })

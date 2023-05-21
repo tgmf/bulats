@@ -34,6 +34,7 @@ const MyTheme = {
       '200': '#7AC8FF',
       '300': '#52B8FF',
       '400': '#29A7FF',
+      '480': '#1e0695',
       '500': '#0096FF',
       '600': '#0075C7',
       '700': '#00548F',
@@ -77,7 +78,7 @@ export default defineConfig({
         '8xl': '90rem',
       },
       colors: {
-        primary: MyTheme.colors.green,
+        primary: MyTheme.colors.blue,
         // if want to change primary color to blue
         // primary: MyTheme.colors.blue,
         green: MyTheme.colors.green,

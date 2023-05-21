@@ -10,6 +10,9 @@ declare module '@nuxt/schema' {
       name: string
       link: string
     }
+    phone: string
+    email: string
+    competences: string
   }
 }
 
