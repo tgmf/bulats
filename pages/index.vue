@@ -46,13 +46,13 @@ useHead(() => ({
       <PageSection class="flex flex-col md:flex-row items-start">
         <h2
           v-if="localeSetting === 'en'"
-          class="w-100 text-3xl md:text-4xl md:w-1/2 md:pr-8 md:text-right font-serif"
+          class="text-3xl md:text-4xl md:w-1/2 md:pr-8 md:text-right font-serif"
         >
           Get in touch
         </h2>
         <h2
           v-if="localeSetting === 'fr'"
-          class="w-100 text-3xl md:text-4xl md:w-1/2 md:pr-8 md:text-right font-serif"
+          class="text-3xl md:text-4xl md:w-1/2 md:pr-8 md:text-right font-serif"
         >
           Prendre contact
         </h2>
