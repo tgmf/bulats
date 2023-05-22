@@ -3,6 +3,7 @@
     method="POST"
     data-netlify="true"
     name="contact"
+    data-netlify-honeypot="bot-field"
     @submit.prevent="handleSubmit"
   >
     <input type="hidden" name="form-name" value="contact" />

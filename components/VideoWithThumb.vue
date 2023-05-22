@@ -46,7 +46,7 @@ onUnmounted(() => {
       height="320"
       allow="fullscreen"
       class="max-w-full top-0"
-      :class="{ absolute: showThumbnail }"
+      :class="{ absolute: showThumbnail && props.video.thumbnail }"
       @load="onIframeLoad"
     ></iframe>
     <img
