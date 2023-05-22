@@ -35,10 +35,10 @@ useHead(() => ({
             Cinéaste, producteur audiovisuel créatif
           </h2>
         </div>
-        <div v-if="localeSetting === 'en'" class="intro w-full md:w-1/2">
+        <div v-show="localeSetting === 'en'" class="intro w-full md:w-1/2">
           <ContentDoc path="/text/intro-en" />
         </div>
-        <div v-if="localeSetting === 'fr'" class="intro w-full md:w-1/2">
+        <div v-show="localeSetting === 'fr'" class="intro w-full md:w-1/2">
           <ContentDoc path="/text/intro-fr" />
         </div>
       </PageSection>
