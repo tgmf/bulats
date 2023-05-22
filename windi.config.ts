@@ -34,7 +34,7 @@ const MyTheme = {
       '200': '#7AC8FF',
       '300': '#52B8FF',
       '400': '#29A7FF',
-      '480': '#1e0695',
+      '480': '#002FA7',
       '500': '#0096FF',
       '600': '#0075C7',
       '700': '#00548F',
@@ -87,7 +87,11 @@ export default defineConfig({
         slate: colors.slate,
       },
       fontFamily: {
-        sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+        sans: [
+          'Neue Haas Grotesk Display Pro',
+          ...defaultTheme.fontFamily.sans,
+        ],
+        serif: ['Minion Pro', ...defaultTheme.fontFamily.serif],
       },
     },
   },

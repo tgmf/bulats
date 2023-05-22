@@ -11,14 +11,7 @@ const props = defineProps({
 <template>
   <ContentDoc>
     <template #default="{ doc }">
-      <PageHeader>
-        <PageTitle :text="doc.title" />
-      </PageHeader>
-      <PageBody>
-        <PageSection>
-          <ContentRenderer :value="doc" />
-        </PageSection>
-      </PageBody>
+      <ContentRenderer :value="doc" />
     </template>
     <template #empty>
       <h1>{{ emptyTip }}</h1>

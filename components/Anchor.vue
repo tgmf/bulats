@@ -13,6 +13,10 @@ const props = defineProps({
     type: String,
     default: '',
   },
+  target: {
+    type: String,
+    default: undefined,
+  },
 })
 
 // state
@@ -33,6 +37,7 @@ const to = toRef(props, 'to')
     v-else
     :class="`transition-colors duration-300 dark:hover:text-white hover:text-gray-900 hover:underline`"
     :href="href"
+    :target="target"
   >
     <slot>{{ text }}</slot>
   </a>

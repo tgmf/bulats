@@ -40,7 +40,7 @@ const localeSetting = useState<string>('locale.setting')
         </span>
       </ListboxButton>
       <ListboxOptions
-        class="p-1 absolute z-50 top-full right-0 outline-none bg-white rounded-lg ring-1 ring-gray-900/10 shadow-lg overflow-hidden w-36 py-1 text-sm text-gray-700 font-semibold dark:bg-gray-800 dark:ring-0 dark:highlight-white/5 dark:text-gray-300"
+        class="p-1 absolute z-50 top-full right-0 outline-none overflow-hidden w-36 py-1 text-sm text-blue-480 dark:text-white"
       >
         <ListboxOption
           v-for="lang in availableLocales"
@@ -63,13 +63,13 @@ const localeSetting = useState<string>('locale.setting')
     <select
       v-if="currentStyle === 'select-box'"
       v-model="localeSetting"
-      class="w-full px-2 pr-3 py-1 outline-none rounded border bg-transparent text-gray-700 dark:text-gray-300 border-gray-900/10 dark:border-gray-50/[0.2]"
+      class="w-full px-2 pr-3 py-1 outline-none rounded border bg-transparent text-blue-480 dark:text-white"
     >
       <option
         v-for="lang in availableLocales"
         :key="lang.iso"
         :value="lang.iso"
-        class="flex items-center space-x-2"
+        class="flex items-right text-right space-x-2"
       >
         {{ lang.name }}
       </option>

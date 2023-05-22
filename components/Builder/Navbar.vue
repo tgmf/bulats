@@ -86,7 +86,7 @@ const toggleOptions = (show?: boolean) => {
               :to="{ name: 'index' }"
             >
               <span class="sr-only">home</span>
-              <h1 class="flex items-center text-4xl">
+              <h1 class="flex items-center text-4xl font-serif">
                 {{ app.name }}
               </h1>
             </NuxtLink>
