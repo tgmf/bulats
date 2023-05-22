@@ -47,7 +47,7 @@ const localeSetting = useState<string>('locale.setting')
           :key="lang.iso"
           :value="lang.iso"
           :class="{
-            'py-1 flex items-end text-right text-blue-480 dark:text-white': true,
+            'py-1 flex items-center md:items-end md:text-right text-blue-480 dark:text-white': true,
             'hover:underline cursor-pointer': localeSetting !== lang.iso,
           }"
         >
@@ -66,7 +66,7 @@ const localeSetting = useState<string>('locale.setting')
         v-for="lang in availableLocales"
         :key="lang.iso"
         :value="lang.iso"
-        class="flex items-end text-right space-x-2"
+        class="flex items-center md:items-end md:text-right text-blue-480 dark:md:dark:text-white space-x-2"
       >
         {{ lang.name }}
       </option>

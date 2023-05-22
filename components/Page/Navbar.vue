@@ -43,7 +43,7 @@ const menus = computed((): IMenuItem[] => [])
         </nav>
         <div class="flex space-x-4 ml-6 pl-6">
           <Anchor
-            class="hover:no-underline hover:text-slate-900 hover:dark:text-white text-lg flex self-center items-center"
+            class="hover:no-underline text-lg flex self-center items-center"
             href="https://vimeo.com/bulatsharipov"
             title="Vimeo"
             target="_blank"
@@ -51,7 +51,7 @@ const menus = computed((): IMenuItem[] => [])
             <IconMdi:vimeo />
           </Anchor>
           <Anchor
-            class="hover:no-underline hover:text-slate-900 hover:dark:text-white text-lg flex self-center items-center"
+            class="hover:no-underline text-lg flex self-center items-center"
             href="https://www.instagram.com/bulat_sharipov/"
             title="Instagram"
             target="_blank"
@@ -59,7 +59,7 @@ const menus = computed((): IMenuItem[] => [])
             <IconMdi:instagram />
           </Anchor>
           <Anchor
-            class="hover:no-underline hover:text-slate-900 hover:dark:text-white text-lg flex self-center items-center"
+            class="hover:no-underline text-lg flex self-center items-center"
             href="https://www.linkedin.com/in/bulat-sharipov/"
             title="LinkedIn"
             target="_blank"
@@ -73,36 +73,32 @@ const menus = computed((): IMenuItem[] => [])
     <template #options="{ toggleOptions }">
       <ActionSheet @on-close="toggleOptions(false)">
         <ActionSheetBody>
-          <ActionSheetHeader text="Menu" />
-          <nav class="leading-6 font-semibold text-gray-600 dark:text-gray-300">
-            <ul class="flex flex-col">
-              <li
-                v-for="(item, i) in menus"
-                :key="i"
-                class="flex w-full"
-                :class="{
-                  'pb-2 mb-2 border-b border-gray-900/10 dark:border-gray-50/[0.2]':
-                    item.type === 'link',
-                }"
-              >
-                <Anchor
-                  v-if="item.type === 'link'"
-                  :to="item.route ? item.route : undefined"
-                  :href="item.href ? item.href : undefined"
-                  class="flex-1 hover:no-underline capitalize"
-                  >{{ item.text }}</Anchor
-                >
-                <Button
-                  v-else-if="item.type === 'button'"
-                  :text="item.text"
-                  size="xs"
-                  class="flex-1 font-extrabold capitalize"
-                  :to="item.route ? item.route : undefined"
-                  :href="item.href ? item.href : undefined"
-                />
-              </li>
-            </ul>
-          </nav>
+          <div class="flex justify-around">
+            <Anchor
+              class="hover:no-underline text-lg flex self-center items-center"
+              href="https://vimeo.com/bulatsharipov"
+              title="Vimeo"
+              target="_blank"
+            >
+              <IconMdi:vimeo />
+            </Anchor>
+            <Anchor
+              class="hover:no-underline text-lg flex self-center items-center"
+              href="https://www.instagram.com/bulat_sharipov/"
+              title="Instagram"
+              target="_blank"
+            >
+              <IconMdi:instagram />
+            </Anchor>
+            <Anchor
+              class="hover:no-underline text-lg flex self-center items-center"
+              href="https://www.linkedin.com/in/bulat-sharipov/"
+              title="LinkedIn"
+              target="_blank"
+            >
+              <IconMdi:linkedin />
+            </Anchor>
+          </div>
           <div class="mt-6 text-sm font-bold capitalize">
             {{ $t('components.language_switcher.change_language') }}
           </div>
