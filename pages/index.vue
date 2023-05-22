@@ -36,10 +36,10 @@ useHead(() => ({
           </h2>
         </div>
         <div v-if="localeSetting === 'en'" class="intro w-full md:w-1/2">
-          <NuxtContent path="/page/intro-en" />
+          <ContentDoc path="/text/intro-en" />
         </div>
         <div v-if="localeSetting === 'fr'" class="intro w-full md:w-1/2">
-          <NuxtContent path="/page/intro-fr" />
+          <ContentDoc path="/text/intro-fr" />
         </div>
       </PageSection>
       <VideoList />
