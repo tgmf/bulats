@@ -7,7 +7,9 @@
     @submit.prevent="handleSubmit"
   >
     <input type="hidden" name="form-name" value="contact" />
-
+    <p hidden>
+      <label>Don’t fill this out: <input name="bot-field" /></label>
+    </p>
     <div>
       <label for="name" class="capitalize block mb-2">{{
         $t('components.page.form.name')
