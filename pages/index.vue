@@ -1,15 +1,24 @@
 <script lang="ts" setup>
-// import { AppConfigInput } from '@nuxt/schema'
+import { AppConfigInput } from '@nuxt/schema'
 const localeSetting = useState<string>('locale.setting')
 
 // state
-// const app = useAppConfig() as AppConfigInput
+const app = useAppConfig() as AppConfigInput
 // composable
 // const { t } = useLang()
 // meta
 definePageMeta({
   layout: 'page',
 })
+useHead(() => ({
+  title: app.name,
+  meta: [
+    {
+      name: 'description',
+      content: app.description,
+    },
+  ],
+}))
 </script>
 
 <template>

@@ -1,5 +1,6 @@
 export default defineAppConfig({
   name: 'Bulat Sharipov',
+  description: 'Filmmaker, creative video producer',
   author: {
     name: 'tgmf',
     link: 'https://github.com/tgmf',

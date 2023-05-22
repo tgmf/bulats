@@ -6,6 +6,7 @@ import { ModuleOptions as NuxtContentModuleOptions } from '@nuxt/content'
 declare module '@nuxt/schema' {
   interface AppConfigInput {
     name: string
+    description: string
     author: {
       name: string
       link: string
