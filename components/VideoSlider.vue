@@ -26,8 +26,12 @@ const query: QueryBuilderParams = {
             localeSetting === 'en' ? props.category.name : props.category.nameFr
           }}
         </h2>
-        <div class="flex flex-col md:flex-row md:space-x-8">
-          <div v-for="video in list" :key="video._path" class="lg:w-1/3">
+        <div class="flex flex-col lg:flex-row lg:space-x-8">
+          <div
+            v-for="video in list"
+            :key="video._path"
+            class="lg:w-1/3 mb-12 lg:mb-0"
+          >
             <VideoWithThumb :video="video" />
           </div>
         </div>
