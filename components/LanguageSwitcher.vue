@@ -47,11 +47,8 @@ const localeSetting = useState<string>('locale.setting')
           :key="lang.iso"
           :value="lang.iso"
           :class="{
-            'py-2 px-2 flex items-center cursor-pointer': true,
-            'text-sky-500 bg-gray-100 dark:bg-gray-600/30':
-              localeSetting === lang.iso,
-            'hover:bg-gray-50 dark:hover:bg-gray-700/30':
-              localeSetting !== lang.iso,
+            'py-1 flex items-end text-right text-blue-480 dark:text-white': true,
+            'hover:underline cursor-pointer': localeSetting !== lang.iso,
           }"
         >
           <span class="flex-1 truncate">
@@ -63,13 +60,13 @@ const localeSetting = useState<string>('locale.setting')
     <select
       v-if="currentStyle === 'select-box'"
       v-model="localeSetting"
-      class="w-full px-2 pr-3 py-1 outline-none rounded border bg-transparent text-blue-480 dark:text-white"
+      class="w-full py-1 outline-none rounded border bg-transparent text-blue-480 dark:text-white"
     >
       <option
         v-for="lang in availableLocales"
         :key="lang.iso"
         :value="lang.iso"
-        class="flex items-right text-right space-x-2"
+        class="flex items-end text-right space-x-2"
       >
         {{ lang.name }}
       </option>
