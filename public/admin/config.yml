@@ -19,8 +19,8 @@ collections:
       - { label: 'French Title', name: 'titleFr', widget: 'string' }
       - { label: 'Description', name: 'description', widget: 'text' }
       - { label: 'French Description', name: 'descriptionFr', widget: 'text' }
-      - { label: 'Link to the Video', name: 'url', widget: 'string' }
-      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
+      - { label: 'Link to the Video', name: 'url', widget: 'string', required: false }
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', required: false }
       - { label: "Category",  name: "category", widget: "relation", collection: "categories", search_fields: ["name", "nameFr"], value_field: "name", display_fields: ["name", "nameFr"] }
 
   - name: 'categories'
@@ -34,4 +34,4 @@ collections:
     fields:
       - { label: 'Name', name: 'name', widget: 'string' }
       - { label: 'French Name', name: 'nameFr', widget: 'string' }
-      - { label: 'Order on a Page', name: 'order', widget: 'number' }
+      - { label: 'Order on a Page', name: 'order', widget: 'number', required: false }
