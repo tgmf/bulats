@@ -1,0 +1,37 @@
+backend:
+  name: git-gateway
+  branch: main # Branch to update (optional; defaults to master)
+
+media_folder: public/thumbnails
+public_folder: /thumbnails
+
+collections:
+  - name: 'video'
+    label: 'Videos'
+    folder: 'content/video'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'French Title', name: 'titleFr', widget: 'string' }
+      - { label: 'Description', name: 'description', widget: 'text' }
+      - { label: 'French Description', name: 'descriptionFr', widget: 'text' }
+      - { label: 'Link to the Video', name: 'url', widget: 'string' }
+      - { label: 'Thumbnail', name: 'thumbnail', widget: 'image' }
+      - { label: "Category",  name: "category", widget: "relation", collection: "categories", search_fields: ["name", "nameFr"], value_field: "name", display_fields: ["name", "nameFr"] }
+
+  - name: 'categories'
+    label: 'Categories'
+    folder: 'content/categories'
+    format: 'frontmatter'
+    create: true
+    slug: '{{slug}}'
+    editor:
+      preview: false
+    fields:
+      - { label: 'Name', name: 'name', widget: 'string' }
+      - { label: 'French Name', name: 'nameFr', widget: 'string' }
+      - { label: 'Order on a Page', name: 'order', widget: 'number' }
