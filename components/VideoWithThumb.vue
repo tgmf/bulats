@@ -43,7 +43,7 @@ onUnmounted(() => {
       ref="iframe"
       :src="iframeSrc"
       width="480"
-      height="320"
+      height="270"
       allow="fullscreen"
       class="max-w-full top-0"
       :class="{ absolute: showThumbnail && props.video.thumbnail }"
@@ -55,7 +55,7 @@ onUnmounted(() => {
       :src="props.video.thumbnail"
       :alt="localeSetting === 'en' ? props.video.title : props.video.titleFr"
       width="480"
-      height="320"
+      height="270"
       class="video-thumbnail h-[320px] ar-auto object-cover top-0"
     />
   </div>
