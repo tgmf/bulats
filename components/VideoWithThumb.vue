@@ -50,7 +50,7 @@ const showThumbnail = ref(true)
       :alt="localeSetting === 'en' ? props.video.title : props.video.titleFr"
       width="480"
       height="270"
-      class="video-thumbnail h-[calc(900wv/16)] max-h-[270px] ar-auto object-cover top-0"
+      class="video-thumbnail h-[56.25vw] max-h-[270px] ar-auto object-cover top-0"
       :class="{ 'cursor-pointer': props.video.url }"
       @click="emit('select', props.video.url)"
     />
