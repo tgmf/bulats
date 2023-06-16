@@ -4,7 +4,7 @@ titleFr: "Rachel Leah Cohn "
 description: 'Artist Rachel Leah Cohn '
 descriptionFr: 'Artiste Rachel Leah Cohn'
 url: "https://drive.google.com/file/d/17BUFzWfpe2mAssN-L48uqBSqIvdDR_Cm/preview"
-thumbnail: ""
+thumbnail: "/thumbnails/rachel.jpg"
 category: "Teaser campaignes"
 categoryFr: "Campagnes de teaser"
 ---

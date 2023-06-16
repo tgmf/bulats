@@ -9,6 +9,8 @@ const props = defineProps<{
   }
 }>()
 
+const emit = defineEmits(['select'])
+
 const query: QueryBuilderParams = {
   path: '/video',
   where: [{ category: props.category.name }],
@@ -32,7 +34,10 @@ const query: QueryBuilderParams = {
             :key="video._path"
             class="lg:w-1/3 mb-12 lg:mb-0"
           >
-            <VideoWithThumb :video="video" />
+            <VideoWithThumb
+              :video="video"
+              @select="(videoLink: string) => emit('select', videoLink)"
+            />
           </div>
         </div>
       </PageSection>

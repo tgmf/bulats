@@ -4,7 +4,7 @@ titleFr: "Hip-Hop"
 description: 'Teaser for the hip-hop guide to the 20th century avantgarde art.'
 descriptionFr: "Teaser pour le guide hip-hop de l'art d'avant-garde du 20e siècle."
 url: "https://drive.google.com/file/d/172ejJ8LM4jPoetNSQSPK8x8vvRjmGcHR/preview"
-thumbnail: ""
+thumbnail: "/thumbnails/Hip-hop.jpg"
 category: "Short animated videos"
 categoryFr: "Courtes vidéos d'animation"
 ---

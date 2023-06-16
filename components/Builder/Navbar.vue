@@ -13,8 +13,8 @@ onMounted(() => {
   if (!navbar.value) return
 
   // scroll
-  const { onScroll } = useSticky(navbar.value, 0)
-  setTimeout(() => onScroll(), 50)
+  // const { onScroll } = useSticky(navbar.value, 0)
+  // setTimeout(() => onScroll(), 50)
 
   // on show on mobile
   setInterval(() => {

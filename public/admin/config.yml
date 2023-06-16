@@ -21,7 +21,7 @@ collections:
       - { label: 'French Description', name: 'descriptionFr', widget: 'text' }
       - { label: 'Link to the Video', name: 'url', widget: 'string', required: false }
       - { label: 'Thumbnail', name: 'thumbnail', widget: 'image', required: false }
-      - { label: "Category",  name: "category", widget: "relation", collection: "categories", search_fields: ["name", "nameFr"], value_field: "name", display_fields: ["name", "nameFr"] }
+      - { label: "Category",  name: "category", widget: "relation", collection: "categories", search_fields: "name", value_field: "name", display_fields: "name" }
 
   - name: 'categories'
     label: 'Categories'
