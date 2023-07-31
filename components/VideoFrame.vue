@@ -10,7 +10,8 @@ const props = defineProps<{
     :src="props.video"
     width="960"
     height="540"
-    allow="fullscreen"
+    allow="fullscreen; autoplay; web-share"
     class="max-w-full top-0"
+    allowfullscreen
   ></iframe>
 </template>
