@@ -62,6 +62,7 @@ const showThumbnail = ref(true)
       height="270"
       allow="fullscreen"
       class="max-w-full top-0"
+      allowfullscreen
     ></iframe>
   </div>
   <p
