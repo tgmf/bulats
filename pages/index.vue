@@ -78,7 +78,7 @@ p {
   font-size: 1.25em;
 }
 
-a {
+section a {
   text-decoration: underline;
 }
 </style>
