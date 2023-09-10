@@ -77,4 +77,8 @@ p {
   margin-bottom: 1.3em;
   font-size: 1.25em;
 }
+
+a {
+  text-decoration: underline;
+}
 </style>
