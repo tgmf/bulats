@@ -20,10 +20,10 @@ const selectVideo = (video: string) => {
   </ContentList>
   <div
     v-if="selectedVideo"
-    class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50"
+    class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-75"
     @click="() => (selectedVideo = '')"
   >
-    <div class="relative bg-white" @click.stop>
+    <div @click.stop>
       <VideoFrame :video="selectedVideo" />
     </div>
   </div>

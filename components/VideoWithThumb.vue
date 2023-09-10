@@ -17,29 +17,8 @@ const props = defineProps<{
 
 const emit = defineEmits(['select'])
 
-const selectVideo = function (videolink: string) {
-  emit('select', videolink)
-}
 // const iframe = ref<HTMLIFrameElement | null>(null)
 const showThumbnail = ref(true)
-// const iframeSrc = ref('') // Start with an empty src
-
-// const { stop } = useIntersectionObserver(
-//   iframe,
-//   ([{ isIntersecting }], observerElement) => {
-//     if (isIntersecting) {
-//       iframeSrc.value = props.video.url // Load video when iframe is in view
-//     }
-//   }
-// )
-
-// const onIframeLoad = () => {
-//   showThumbnail.value = false
-// }
-
-// onUnmounted(() => {
-//   stop() // Disconnect observer when component is unmounted
-// })
 </script>
 
 <template>

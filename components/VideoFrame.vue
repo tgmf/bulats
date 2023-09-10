@@ -9,9 +9,15 @@ const props = defineProps<{
     ref="iframe"
     :src="props.video"
     width="960"
-    height="540"
     allow="fullscreen; autoplay"
     class="max-w-full top-0"
     allowfullscreen
+    asp
   ></iframe>
 </template>
+
+<style>
+iframe {
+  aspect-ratio: 16/9;
+}
+</style>
